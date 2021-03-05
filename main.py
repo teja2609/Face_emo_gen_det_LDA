@@ -51,11 +51,11 @@ if __name__ == '__main__':
     gender   =  ["male","female"]
     # Loading the trained models of emotion
     fisher_face_emo = cv2.face.FisherFaceRecognizer_create()
-    fisher_face_emo.read('E:\models\emotion_classifier_model.xml')
+    fisher_face_emo.read('D:\models\emotion_classifier_model.xml')
 
 #loading the trained models of gender
     fisher_face_gen = cv2.face.FisherFaceRecognizer_create()
-    fisher_face_gen.read('E:\models\gender_classifier_model.xml')
+    fisher_face_gen.read('D:\models\gender_classifier_model.xml')
 
     # starting the model to predict
     choice = input("starting your webcam?(y/n) ")

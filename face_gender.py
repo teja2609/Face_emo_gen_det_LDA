@@ -8,7 +8,7 @@ fisherface = cv2.face.FisherFaceRecognizer_create()
 
 def getfiles(gender, training_size):
     #loading the dataset
-    file = glob.glob("E:\\cropped_faces\\{0}\\*" .format(gender))
+    file = glob.glob("D:\\cropped_faces\\{0}\\*" .format(gender))
     random.shuffle(file)
     train = file[:int(len(file) * training_size)]
     predict = file[-int(len(file) * (1 - training_size)):]

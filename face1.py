@@ -1,6 +1,6 @@
 import cv2
 
-faceCascade = cv2.CascadeClassifier('E:\models\haarcascade_frontalface_default.xml')
+faceCascade = cv2.CascadeClassifier('D:\models\haarcascade_frontalface_default.xml')
 
 def faces_find(image):
     coordinates = locate_faces(image)

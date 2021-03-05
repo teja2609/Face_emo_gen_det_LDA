@@ -8,7 +8,7 @@ fisherface = cv2.face.FisherFaceRecognizer_create()
 
 def getfile(emotion, training_size):
     #loading the dataset for training
-    file = glob.glob("C:\\Users\haris\PycharmProjects\python-project\data\\raw_emotion\\{0}\\*" .format(emotion))
+    file = glob.glob("C:\\Users\Teja\PycharmProjects\python-project\data\\raw_emotion\\{0}\\*" .format(emotion))
     random.shuffle(file) #shuffling the data
     train = file[:int(len(file) * training_size)]
     predict = file[-int(len(file) * (1 - training_size)):]
